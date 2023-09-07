@@ -3,7 +3,7 @@
 <div align="center">
   <br/>
 
-  <h3><b>Space Traveller's Hub</b></h3>
+  <h3><b>Crypto-Hub</b></h3>
 
 </div>
 
@@ -32,7 +32,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**Space Traveller's Hub** is a website to reservation rockets and missions.
+**Crpto-Hub** is an App to keep up to date with the prices and information about Crypto currency.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,14 +52,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Make reservtion of Roxkets**
-- **Make reservtion of Missions**
+- **Displays different types of Cryto currency and all the relevant information about the currency to help you make an informed decision**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon]()
+- [Live Version](https://crypto-hub.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd project-folder
-  git clone https://github.com/SnakyMz/space-hub.git
+  git clone https://github.com/As1imwe-Mark/Crypto-Hub.git
 ```
 
 ### Install
@@ -156,7 +155,7 @@ If you like this project and wish to collaborate. Please contact us.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thank you Microverse.
+- Thank you Microverse and Nelson Sakwa on Behance for the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
