@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { fetchCoins } from '../redux/feature/coinSlice';
@@ -17,7 +16,7 @@ const CoinsList = () => {
     setFilter(event.target.value);
   };
 
-  const filteredCoins = coins.filter((coin) => coin.name.toLowerCase().includes(filter.toLowerCase()));
+  const filtered = coins.filter((coin) => coin.name.toLowerCase().includes(filter.toLowerCase()));
 
   if (isLoading) {
     return <div className="loading">Loading...</div>;
@@ -35,7 +34,7 @@ const CoinsList = () => {
         />
       </div>
       <article className="coins-list">
-        {filteredCoins.map((coin) => (
+        {filtered.map((coin) => (
           <CoinsCard key={coin.id} coin={coin} />
         ))}
       </article>
