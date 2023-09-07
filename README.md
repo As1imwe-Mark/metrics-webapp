@@ -59,6 +59,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Version](https://crypto-hub.onrender.com/)
+- This is the presentation video: [Presentation](https://www.loom.com/share/049505e541c9446fbf5c6a5770d82991?sid=19606874-5dc7-4b08-be0b-e922afd0d819)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
