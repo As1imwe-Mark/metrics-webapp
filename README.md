@@ -14,7 +14,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo and Presentation ](#-live-demo-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -56,10 +56,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo and Presentation"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Version](https://crypto-hub.onrender.com/)
-- [Presentation](https://www.loom.com/share/049505e541c9446fbf5c6a5770d82991?sid=19606874-5dc7-4b08-be0b-e922afd0d819)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
