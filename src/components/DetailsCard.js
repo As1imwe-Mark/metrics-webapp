@@ -1,4 +1,6 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable import/no-extraneous-dependencies */
+import PropTypes from 'prop-types';
+
 const DetailsCard = ({ coin }) => (
   <ul className="details-card">
     <div className="details">
@@ -91,4 +93,23 @@ const DetailsCard = ({ coin }) => (
     </li>
   </ul>
 );
+
+DetailsCard.propTypes = {
+  coin: PropTypes.shape({
+    icon: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    rank: PropTypes.number.isRequired,
+    priceBtc: PropTypes.number.isRequired,
+    volume: PropTypes.number.isRequired,
+    marketCap: PropTypes.number.isRequired,
+    availableSupply: PropTypes.number.isRequired,
+    totalSupply: PropTypes.number.isRequired,
+    priceChange1h: PropTypes.number.isRequired,
+    priceChange1d: PropTypes.number.isRequired,
+    priceChange1w: PropTypes.number.isRequired,
+    websiteUrl: PropTypes.string.isRequired,
+    twitterUrl: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 export default DetailsCard;

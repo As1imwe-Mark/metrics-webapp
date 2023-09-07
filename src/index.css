@@ -22,7 +22,10 @@ nav {
   align-items: center;
   background-color: rgb(201, 47, 73);
   padding: 10px 0;
-  border-bottom: 1px solid rgb(187, 36, 61);
+}
+
+nav h4 {
+  font-weight: 400;
 }
 
 .nav-items {
@@ -55,12 +58,14 @@ nav {
   flex-wrap: wrap;
   gap: 2px;
   background-color: rgb(214, 60, 85);
+  min-height: 100vh;
 }
 
 .card {
   width: 48%;
   padding-top: 8px;
   text-decoration: none;
+  height: 100px;
 }
 
 .card:nth-child(4n+1),
@@ -130,4 +135,20 @@ ul li span {
   margin: 100px;
   font-weight: bold;
   color: black;
+}
+
+.search {
+  text-align: center;
+  background-color: rgb(201, 47, 73);
+  border-bottom: 1px solid  rgb(158, 27, 51);
+}
+
+input {
+  margin: 15px 0;
+  padding: 7px 10px;
+  width: 20%;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  border: none;
+  -moz-border-radius: 2%;
 }
