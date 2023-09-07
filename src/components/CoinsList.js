@@ -4,13 +4,18 @@ import { fetchCoins } from '../redux/feature/coinSlice';
 import CoinsCard from './coinsCard';
 
 const CoinsList = () => {
-  const coins = useSelector((store) => store.coin.coins);
-
+  const { coins, isLoading } = useSelector((store) => store.coin);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCoins());
   }, [dispatch]);
+
+  if (isLoading) {
+    return (
+      <div className="loading">Loading...</div>
+    );
+  }
 
   return (
     <article className="coins-list">
