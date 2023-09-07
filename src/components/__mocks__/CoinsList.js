@@ -10,7 +10,7 @@ const coins = [
     price: 12233.233,
   },
   {
-    name: 'Etherel',
+    name: 'Ethereum',
     id: 2,
     icon: 'icons',
     rank: 3,

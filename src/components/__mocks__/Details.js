@@ -9,7 +9,7 @@ const coins = [
     show: false,
   },
   {
-    name: 'Etherel',
+    name: 'Ethereum',
     id: 2,
     icon: 'icons',
     rank: 3,

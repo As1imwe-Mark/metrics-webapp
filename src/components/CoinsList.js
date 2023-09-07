@@ -1,23 +1,45 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchCoins } from '../redux/feature/coinSlice';
 import CoinsCard from './coinsCard';
 
 const CoinsList = () => {
-  const coins = useSelector((store) => store.coin.coins);
-
+  const { coins, isLoading } = useSelector((store) => store.coin);
+  const [filter, setFilter] = useState('');
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCoins());
   }, [dispatch]);
 
+  const handleSearch = (event) => {
+    setFilter(event.target.value);
+  };
+
+  const filtered = coins.filter((coin) => coin.name.toLowerCase().includes(filter.toLowerCase()));
+
+  if (isLoading) {
+    return <div className="loading">Loading...</div>;
+  }
+
   return (
-    <article className="coins-list">
-      {coins.map((coin) => (
-        <CoinsCard key={coin.rank} coin={coin} />
-      ))}
-    </article>
+    <div>
+      <div className="search">
+        <h3>Search by Name</h3>
+        <input
+          type="text"
+          placeholder="Search..."
+          value={filter}
+          onChange={handleSearch}
+        />
+      </div>
+      <article className="coins-list">
+        {filtered.map((coin) => (
+          <CoinsCard key={coin.id} coin={coin} />
+        ))}
+      </article>
+    </div>
   );
 };
+
 export default CoinsList;
